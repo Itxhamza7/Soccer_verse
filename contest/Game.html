@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoccerVerse - Games</title>
+    <style>
+        /* Reset default styles */
+        body, html {
+            background-color: rgba(0, 0, 0, 0.105);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333232;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Main container */
+        .container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Section headers */
+        .section-header {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Game card styles */
+        .game-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px; /* Added max-width for smaller screens */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px); /* Optional: adds a blur effect behind cards */
+        }
+
+        .team-info {
+            text-align: center;
+            width: 30%;
+        }
+
+        .team-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .match-details {
+            text-align: center;
+            width: 30%;
+        }
+
+        .match-time {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .match-date {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Live match indicator */
+        .live-indicator {
+            color: red;
+            font-size: 16px;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(51, 50, 50, 0.8); /* Slightly transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img style="text-align: start;" src="img/logo/Logo.png" alt="Logo" width="250px"></a>
+        </div>
+        <ul>
+            <li><a href="Game.html">Games</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="topScore.html">Top Scores</a></li>
+            <li><a href="feedBack.html">Feedback</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Upcoming Games Section -->
+        <div class="section-header">Upcoming Games</div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/01.jpg" alt="Team 1 Logo">
+                <div>Barcelona</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">18:30</div>
+                <div class="match-date">Aug 26, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/02.jpg" alt="Team 2 Logo">
+                <div>Real Madrid</div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/03.png" alt="Team 3 Logo">
+                <div>Liverpool</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">20:00</div>
+                <div class="match-date">Aug 27, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/04.png" alt="Team 4 Logo">
+                <div>Manchester City</div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/05.jpg" alt="Team 5 Logo">
+                <div>Juventus</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">21:00</div>
+                <div class="match-date">Aug 28, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/06.png" alt="Team 6 Logo">
+                <div>AC Milan</div>
+            </div>
+        </div>
+
+        <!-- Past Games Section -->
+        <div class="section-header">Past Games</div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/07.jpg" alt="Team 7 Logo">
+                <div>PSG</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">3 - 2</div>
+                <div class="match-date">Aug 22, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/08.png" alt="Team 8 Logo">
+                <div>Chelsea</div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/11.jpg" alt="Team 11 Logo">
+                <div>Bayern Munich</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">1 - 0</div>
+                <div class="match-date">Aug 21, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/12.png" alt="Team 12 Logo">
+                <div>Inter Milan</div>
+            </div>
+        </div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/13.jpg" alt="Team 13 Logo">
+                <div>Atletico Madrid</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">2 - 2</div>
+                <div class="match-date">Aug 20, 2024</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/14.png" alt="Team 14 Logo">
+                <div>Borussia Dortmund</div>
+            </div>
+        </div>
+
+        <!-- Live Games Section -->
+        <div class="section-header">Live Games</div>
+        <div class="game-card">
+            <div class="team-info">
+                <img src="img/team/09.jpg" alt="Team 9 Logo">
+                <div>Arsenal</div>
+            </div>
+            <div class="match-details">
+                <div class="match-time">1 - 1</div>
+                <div class="live-indicator">Live</div>
+            </div>
+            <div class="team-info">
+                <img src="img/team/10.png" alt="Team 10 Logo">
+                <div>Tottenham</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SoccerVerse. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#" style="color: white; margin: 0 10px;">Facebook</a> |
+                <a href="#" style="color: white; margin: 0 10px;">Twitter</a> |
+                <a href="#" style="color: white; margin: 0 10px;">Instagram</a>
+            </div>
+            <div class="useful-links">
+                <a href="PrivacyPolicy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+                <a href="TermsOfService.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

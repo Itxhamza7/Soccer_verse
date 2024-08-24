@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game</title>
+   <style>
+     body, html {
+            background-color: #333232;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333232;
+            color: white;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+/* Player Galleries Section */
+#players {
+    padding: 2rem;
+}
+
+#controls {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#controls label {
+    margin-right: 0.5rem;
+}
+
+#controls select,
+#controls input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Player List and Cards */
+#player-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.player-card {
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.player-card h3 {
+    margin: 0.5rem 0;
+}
+
+.player-card p {
+    margin: 0.5rem 0;
+}
+
+/* Hover Effect */
+.player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #player-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card {
+        flex: 1 1 100%;
+    }
+}
+
+   </style>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+       <div class="logo">
+           <a href="index.html"><img style="text-align: start;" src="img/logo/Logo.png" alt="Logo" width="250px"></a>
+       </div>
+       <ul>
+           <li><a href="Game.html">Games</a></li>
+           <li><a href="Players.html">Players</a></li>
+           <li><a href="topScore.html">Top Scores</a></li>
+           <li><a href="feedBack.html">Feedback</a></li>
+           <li><a href="ContactUs.html">Contact Us</a></li>
+       </ul>
+   </nav>
+    <!-- Player Galleries Section -->
+    <section id="players">
+        <h2>Player Galleries</h2>
+        <div id="controls">
+            <!-- Sorting and Filtering Controls -->
+            <label for="sort-players">Sort by:</label>
+            <select id="sort-players">
+                <option value="name">Name</option>
+                <option value="goals">Goals</option>
+            </select>
+            <input type="text" id="search-players" placeholder="Search players...">
+        </div>
+        <div id="player-list">
+            <!-- Player Profiles Section -->
+            <div class="player-card" data-name="Lionel Messi" data-goals="800">
+                <img src="img/players/01.webp" alt="Player 1">
+                <h3>Lionel Messi</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 800 career goals</p>
+            </div>
+            <div class="player-card" data-name="Cristiano Ronaldo" data-goals="850">
+                <img src="img/players/02.webp" alt="Player 2">
+                <h3>Cristiano Ronaldo</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 850 career goals</p>
+            </div>
+            <div class="player-card" data-name="Pelé" data-goals="1000">
+                <img src="img/players/03.webp" alt="Player 3">
+                <h3>Pelé</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 1,000 career goals</p>
+            </div>
+            <div class="player-card" data-name="Diego Maradona" data-goals="300">
+                <img src="img/players/04.webp" alt="Player 4">
+                <h3>Diego Maradona</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 300 career goals</p>
+            </div>
+            <div class="player-card" data-name="Johan Cruyff" data-goals="300">
+                <img src="img/players/05.webp" alt="Player 5">
+                <h3>Johan Cruyff</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 300 career goals</p>
+            </div>
+            <div class="player-card" data-name="Zinedine Zidane" data-goals="125">
+                <img src="img/players/06.webp" alt="Player 6">
+                <h3>Zinedine Zidane</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 125 career goals</p>
+            </div>
+            <div class="player-card" data-name="Ronaldinho" data-goals="300">
+                <img src="img/players/07.webp" alt="Player 7">
+                <h3>Ronaldinho</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 300 career goals</p>
+            </div>
+            <div class="player-card" data-name="David Beckham" data-goals="100">
+                <img src="img/players/08.webp" alt="Player 8">
+                <h3>David Beckham</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 100 career goals</p>
+            </div>
+            <div class="player-card" data-name="Roberto Baggio" data-goals="200">
+                <img src="img/players/09.webp" alt="Player 9">
+                <h3>Roberto Baggio</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 200 career goals</p>
+            </div>
+            <div class="player-card" data-name="George Best" data-goals="200">
+                <img src="img/players/10.webp" alt="Player 10">
+                <h3>George Best</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 200 career goals</p>
+            </div>
+            <div class="player-card" data-name="Thierry Henry" data-goals="400">
+                <img src="img/players/11.webp" alt="Player 11">
+                <h3>Thierry Henry</h3>
+                <p>Position: Forward</p>
+                <p>Goals: Over 400 career goals</p>
+            </div>
+            <div class="player-card" data-name="Roberto Carlos" data-goals="100">
+                <img src="img/players/12.webp" alt="Player 12">
+                <h3>Roberto Carlos</h3>
+                <p>Position: Defender</p>
+                <p>Goals: Over 100 career goals</p>
+            </div>
+            <div class="player-card" data-name="Paolo Maldini" data-goals="40">
+                <img src="img/players/13.webp" alt="Player 13">
+                <h3>Paolo Maldini</h3>
+                <p>Position: Defender</p>
+                <p>Goals: Over 40 career goals</p>
+            </div>
+            <div class="player-card" data-name="Franz Beckenbauer" data-goals="60">
+                <img src="img/players/14.webp" alt="Player 14">
+                <h3>Franz Beckenbauer</h3>
+                <p>Position: Defender</p>
+                <p>Goals: Over 60 career goals</p>
+            </div>
+            <div class="player-card" data-name="Kaká" data-goals="100">
+                <img src="img/players/15.webp" alt="Player 15">
+                <h3>Kaká</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 100 career goals</p>
+            </div>
+            <div class="player-card" data-name="Andrea Pirlo" data-goals="70">
+                <img src="img/players/16.webp" alt="Player 16">
+                <h3>Andrea Pirlo</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 70 career goals</p>
+            </div>
+            <div class="player-card" data-name="Xavi Hernandez" data-goals="80">
+                <img src="img/players/17.webp" alt="Player 17">
+                <h3>Xavi Hernandez</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 80 career goals</p>
+            </div>
+            <div class="player-card" data-name="Andrés Iniesta" data-goals="70">
+                <img src="img/players/18.webp" alt="Player 18">
+                <h3>Andrés Iniesta</h3>
+                <p>Position: Midfielder</p>
+                <p>Goals: Over 70 career goals</p>
+            </div>
+            <div class="player-card" data-name="Gianluigi Buffon" data-goals="0">
+                <img src="img/players/19.webp" alt="Player 19">
+                <h3>Gianluigi Buffon</h3>
+                <p>Position: Goalkeeper</p>
+                <p>Goals: N/A (Legendary saves)</p>
+            </div>
+            <div class="player-card" data-name="Manuel Neuer" data-goals="0">
+                <img src="img/players/20.webp" alt="Player 20">
+                <h3>Manuel Neuer</h3>
+                <p>Position: Goalkeeper</p>
+                <p>Goals: N/A (Revolutionized goalkeeping)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #333232; color: white; padding: 20px; text-align: center;">
+        <div class="footer-content">
+            <p>&copy; 2024 SoccerVerse. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" style="color: white; margin: 0 10px;">Facebook</a> |
+                <a href="https://x.com/" style="color: white; margin: 0 10px;">Twitter</a> |
+                <a href="https://instagram.com/" style="color: white; margin: 0 10px;">Instagram</a>
+            </div>
+            <div class="useful-links">
+                <a href="PrivacyPolicy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+                <a href="TermsOfService.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const sortSelect = document.getElementById('sort-players');
+    const searchInput = document.getElementById('search-players');
+    const playerList = document.getElementById('player-list');
+    let playerCards = Array.from(playerList.getElementsByClassName('player-card'));
+
+    // Function to sort player cards
+    function sortPlayerCards(criterion) {
+        playerCards.sort((a, b) => {
+            let aValue = criterion === 'name' ? a.dataset.name.toLowerCase() : parseInt(a.dataset.goals, 10);
+            let bValue = criterion === 'name' ? b.dataset.name.toLowerCase() : parseInt(b.dataset.goals, 10);
+
+            if (aValue < bValue) return -1;
+            if (aValue > bValue) return 1;
+            return 0;
+        });
+
+        playerCards.forEach(card => playerList.appendChild(card));
+    }
+
+    // Function to filter player cards
+    function filterPlayerCards(query) {
+        playerCards.forEach(card => {
+            const name = card.dataset.name.toLowerCase();
+            card.style.display = name.includes(query.toLowerCase()) ? '' : 'none';
+        });
+    }
+
+    // Event listeners for sorting and searching
+    sortSelect.addEventListener('change', () => {
+        sortPlayerCards(sortSelect.value);
+    });
+
+    searchInput.addEventListener('input', () => {
+        filterPlayerCards(searchInput.value);
+    });
+
+    // Initial sort by name
+    sortPlayerCards('name');
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "players": [
+        {"name": "Player One", "position": "Forward", "team": "Team A", "image": "images/player1.jpg"},
+        {"name": "Player Two", "position": "Midfielder", "team": "Team B", "image": "images/player2.jpg"}
+    ]
+}

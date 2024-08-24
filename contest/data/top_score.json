@@ -1,0 +1,6 @@
+{
+    "topScores": [
+        {"player": "Player One", "goals": 5, "team": "Team A"},
+        {"player": "Player Three", "goals": 4, "team": "Team C"}
+    ]
+}

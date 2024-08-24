@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Scores - SoccerVerse</title>
+    <style>
+        body, html {
+            background-color: #000; /* Set body background to black */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set text color to white for readability */
+        }
+        
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333232;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Top Scores Section */
+        #top-scores {
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        #top-scores h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .score-card {
+            background-color: #222; /* Dark card background */
+            color: #fff; /* White text color */
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #333232;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        footer .social-media a,
+        footer .useful-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        footer .social-media a:hover,
+        footer .useful-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img style="text-align: start;" src="img/logo/Logo.png" alt="Logo" width="250px"></a>
+        </div>
+        <ul>
+            <li><a href="Game.html">Games</a></li>
+            <li><a href="Players.html">Players</a></li>
+            <li><a href="topScore.html">Top Scores</a></li>
+            <li><a href="feedBack.html">Feedback</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Scores Section -->
+    <section id="top-scores">
+        <h2>Top 10 Scores</h2>
+        <div id="top-scores-list">
+            <div class="score-card">Lionel Messi - 700 goals</div>
+            <div class="score-card">Cristiano Ronaldo - 695 goals</div>
+            <div class="score-card">Pelé - 650 goals</div>
+            <div class="score-card">Diego Maradona - 500 goals</div>
+            <div class="score-card">Johan Cruyff - 450 goals</div>
+            <div class="score-card">Zinedine Zidane - 350 goals</div>
+            <div class="score-card">Ronaldinho - 340 goals</div>
+            <div class="score-card">David Beckham - 320 goals</div>
+            <div class="score-card">Roberto Baggio - 310 goals</div>
+            <div class="score-card">George Best - 300 goals</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SoccerVerse. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/">Facebook</a> |
+                <a href="https://x.com/">Twitter</a> |
+                <a href="https://instagram.com/">Instagram</a>
+            </div>
+            <div class="useful-links">
+                <a href="PrivacyPolicy.html">Privacy Policy</a> |
+                <a href="TermsOfService.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
